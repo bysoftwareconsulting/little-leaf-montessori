@@ -36,6 +36,7 @@ export function Root() {
             </Link>
 
             {/* Desktop Navigation */}
+            <div className="flex flex-row gap-4" >
             <div className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => (
                 <Link
@@ -49,7 +50,7 @@ export function Root() {
                   {link.label}
                 </Link>
               ))}
-              
+
             </div>
 
             {/* Mobile Menu Button */}
@@ -64,22 +65,23 @@ export function Root() {
               )}
             </button>
             <div className="flex bg-stone-100 rounded-full p-1 text-sm">
-                <button
-                  onClick={() => setLanguage("en")}
-                  className={`px-3 py-1 rounded-full cursor-pointer ${language === "en" ? "bg-white shadow text-emerald-600" : "text-stone-500"
-                    }`}
-                >
-                  EN
-                </button>
-                <button
-                  onClick={() => setLanguage("ja")}
-                  className={`px-3 py-1 rounded-full cursor-pointer ${language === "ja" ? "bg-white shadow text-emerald-600" : "text-stone-500"
-                    }`}
-                >
-                  JP
-                </button>
-              </div>
-            
+              <button
+                onClick={() => setLanguage("en")}
+                className={`px-3 py-1 rounded-full cursor-pointer ${language === "en" ? "bg-white shadow text-emerald-600" : "text-stone-500"
+                  }`}
+              >
+                EN
+              </button>
+              <button
+                onClick={() => setLanguage("ja")}
+                className={`px-3 py-1 rounded-full cursor-pointer ${language === "ja" ? "bg-white shadow text-emerald-600" : "text-stone-500"
+                  }`}
+              >
+                JP
+              </button>
+            </div>
+            </div>
+
           </div>
 
           {/* Mobile Navigation */}
@@ -115,16 +117,16 @@ export function Root() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-8 h-8  rounded-full flex items-center justify-center">
-                <img
-                  src="/favicon.png"
-                  alt="Montessori Garden Logo"
-                  className="w-full h-full object-cover"
-                />
+                  <img
+                    src="/favicon.png"
+                    alt="Montessori Garden Logo"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <span>{translations.footer.name}</span>
               </div>
               <p className="text-stone-400 text-sm">
-              {translations.footer.motto}
+                {translations.footer.motto}
               </p>
             </div>
             <div>
@@ -144,7 +146,7 @@ export function Root() {
             <div>
               <h3 className="mb-4">{translations.footer.contact}</h3>
               <p className="text-stone-400 text-sm">
-              {translations.footer.address1}
+                {translations.footer.address1}
                 <br />
                 {translations.footer.address2}
                 <br />
