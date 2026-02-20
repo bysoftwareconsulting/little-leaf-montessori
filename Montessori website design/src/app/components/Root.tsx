@@ -1,16 +1,20 @@
+
 import { Outlet, Link, useLocation } from "react-router";
 import { Leaf, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function Root() {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { language, setLanguage } = useLanguage();
+  const { translations } = useLanguage();
 
   const navLinks = [
-    { path: "/", label: "Home" },
-    { path: "/about", label: "About" },
-    { path: "/programs", label: "Programs" },
-    { path: "/contact", label: "Contact" },
+    { path: "/", label: translations.nav.home },
+    { path: "/about", label: translations.nav.about },
+    { path: "/programs", label: translations.nav.programs },
+    { path: "/contact", label: translations.nav.contact },
   ];
 
   return (
@@ -21,10 +25,14 @@ export function Root() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-emerald-600 rounded-full flex items-center justify-center">
-                <Leaf className="w-5 h-5 text-white" />
+              <div className="w-10 h-10 rounded-full overflow-hidden">
+                <img
+                  src="/favicon.png"
+                  alt="Montessori Garden Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <span className="text-stone-800">Montessori Garden</span>
+              <span className="text-stone-800">Little Leaf Montesorri</span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -33,15 +41,15 @@ export function Root() {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`transition-colors ${
-                    location.pathname === link.path
-                      ? "text-emerald-700"
-                      : "text-stone-600 hover:text-emerald-600"
-                  }`}
+                  className={`transition-colors ${location.pathname === link.path
+                    ? "text-emerald-700"
+                    : "text-stone-600 hover:text-emerald-600"
+                    }`}
                 >
                   {link.label}
                 </Link>
               ))}
+              
             </div>
 
             {/* Mobile Menu Button */}
@@ -55,6 +63,23 @@ export function Root() {
                 <Menu className="w-6 h-6" />
               )}
             </button>
+            <div className="flex bg-stone-100 rounded-full p-1 text-sm">
+                <button
+                  onClick={() => setLanguage("en")}
+                  className={`px-3 py-1 rounded-full cursor-pointer ${language === "en" ? "bg-white shadow text-emerald-600" : "text-stone-500"
+                    }`}
+                >
+                  EN
+                </button>
+                <button
+                  onClick={() => setLanguage("ja")}
+                  className={`px-3 py-1 rounded-full cursor-pointer ${language === "ja" ? "bg-white shadow text-emerald-600" : "text-stone-500"
+                    }`}
+                >
+                  JP
+                </button>
+              </div>
+            
           </div>
 
           {/* Mobile Navigation */}
@@ -65,11 +90,10 @@ export function Root() {
                   key={link.path}
                   to={link.path}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`block py-2 transition-colors ${
-                    location.pathname === link.path
-                      ? "text-emerald-700"
-                      : "text-stone-600"
-                  }`}
+                  className={`block py-2 transition-colors ${location.pathname === link.path
+                    ? "text-emerald-700"
+                    : "text-stone-600"
+                    }`}
                 >
                   {link.label}
                 </Link>
@@ -90,17 +114,21 @@ export function Root() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-emerald-600 rounded-full flex items-center justify-center">
-                  <Leaf className="w-5 h-5 text-white" />
+                <div className="w-8 h-8  rounded-full flex items-center justify-center">
+                <img
+                  src="/favicon.png"
+                  alt="Montessori Garden Logo"
+                  className="w-full h-full object-cover"
+                />
                 </div>
-                <span>Montessori Garden</span>
+                <span>{translations.footer.name}</span>
               </div>
               <p className="text-stone-400 text-sm">
-                Nurturing young minds through nature-inspired learning
+              {translations.footer.motto}
               </p>
             </div>
             <div>
-              <h3 className="mb-4">Quick Links</h3>
+              <h3 className="mb-4">{translations.footer.quickLinks}</h3>
               <div className="flex flex-col gap-2">
                 {navLinks.map((link) => (
                   <Link
@@ -114,16 +142,16 @@ export function Root() {
               </div>
             </div>
             <div>
-              <h3 className="mb-4">Contact</h3>
+              <h3 className="mb-4">{translations.footer.contact}</h3>
               <p className="text-stone-400 text-sm">
-                123 Nature Lane
+              {translations.footer.address1}
                 <br />
-                Garden City, GC 12345
+                {translations.footer.address2}
                 <br />
                 <br />
-                Phone: (555) 123-4567
+                {translations.footer.phone}
                 <br />
-                Email: info@montessorigarden.com
+                {translations.footer.email}
               </p>
             </div>
           </div>

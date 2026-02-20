@@ -1,7 +1,9 @@
 import { Link } from "react-router";
 import { Sprout, Heart, Sun } from "lucide-react";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function Home() {
+  const { translations } = useLanguage();
   return (
     <div>
       {/* Hero Section */}
@@ -15,22 +17,22 @@ export function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/80 to-stone-900/60" />
         </div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-6xl mb-6">Welcome to Montessori Garden</h1>
+          <h1 className="text-5xl md:text-6xl mb-6">{translations.homeHero.title}</h1>
           <p className="text-xl md:text-2xl mb-8 text-stone-100">
-            Where nature and learning grow together
+          {translations.homeHero.subtitle}
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link
               to="/programs"
               className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full transition-colors"
             >
-              Explore Programs
+              {translations.homeHero.exploreButton}
             </Link>
             <Link
               to="/contact"
               className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-8 py-3 rounded-full border border-white/30 transition-colors"
             >
-              Schedule a Visit
+              {translations.homeHero.scheduleButton}
             </Link>
           </div>
         </div>
@@ -40,10 +42,9 @@ export function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl mb-4 text-stone-800">Our Philosophy</h2>
+            <h2 className="text-4xl mb-4 text-stone-800">{translations.homeSection.title}</h2>
             <p className="text-stone-600 max-w-2xl mx-auto">
-              We believe in nurturing the whole child through nature-inspired,
-              hands-on learning experiences
+            {translations.homeSection.subtitle}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -51,28 +52,27 @@ export function Home() {
               <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Sprout className="w-8 h-8 text-emerald-700" />
               </div>
-              <h3 className="text-xl mb-3 text-stone-800">Natural Growth</h3>
+              <h3 className="text-xl mb-3 text-stone-800">{translations.homeSection.cards[0].title}</h3>
               <p className="text-stone-600">
-                Children learn at their own pace, following their natural
-                curiosity and interests
+              {translations.homeSection.cards[0].desc}
               </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Sun className="w-8 h-8 text-amber-700" />
               </div>
-              <h3 className="text-xl mb-3 text-stone-800">Bright Environment</h3>
+              <h3 className="text-xl mb-3 text-stone-800">{translations.homeSection.cards[1].title}</h3>
               <p className="text-stone-600">
-                Our classrooms are filled with natural light and organic materials
+              {translations.homeSection.cards[0].desc}
               </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Heart className="w-8 h-8 text-rose-700" />
               </div>
-              <h3 className="text-xl mb-3 text-stone-800">Loving Care</h3>
+              <h3 className="text-xl mb-3 text-stone-800">{translations.homeSection.cards[2].title}</h3>
               <p className="text-stone-600">
-                Each child is valued and supported by our dedicated educators
+              {translations.homeSection.cards[0].desc}
               </p>
             </div>
           </div>
@@ -104,16 +104,14 @@ export function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-emerald-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl mb-6">Ready to Join Our Community?</h2>
+          <h2 className="text-4xl mb-6">{translations.homeFooter.title}</h2>
           <p className="text-xl mb-8 text-emerald-100">
-            Come see how we nurture young minds in a natural, supportive environment
-          </p>
+          {translations.homeFooter.subtitle}          </p>
           <Link
             to="/contact"
             className="inline-block bg-white text-emerald-700 px-8 py-3 rounded-full hover:bg-stone-100 transition-colors"
           >
-            Get in Touch
-          </Link>
+{translations.homeFooter.ctaButton}          </Link>
         </div>
       </section>
     </div>
