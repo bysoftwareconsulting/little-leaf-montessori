@@ -29,8 +29,8 @@ export const jpn = {
     footer:{
         name:"Little Leaf Montesorri",
         motto:"Nurturing young minds through nature inspired learning",
-        quickLinks:"Quick Links",
-        contact:"Contact",
+        quickLinks:"クイックリンク",
+        contact:"コンタクト",
         phone:"Phone: (555) 123-5467",
         address1:"5415 SE Powell Blvd.",
         address2:"Portland, OR 97406",
