@@ -43,10 +43,6 @@ export function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-5xl mb-6 text-stone-800">Contact Us</h1>
-            <p className="text-xl text-stone-600">
-              We'd love to hear from you! Reach out to schedule a tour, ask
-              questions, or learn more about our programs.
-            </p>
           </div>
         </div>
       </section>

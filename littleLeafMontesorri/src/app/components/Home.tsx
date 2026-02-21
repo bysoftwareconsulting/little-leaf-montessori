@@ -63,7 +63,7 @@ export function Home() {
               </div>
               <h3 className="text-xl mb-3 text-stone-800">{translations.homeSection.cards[1].title}</h3>
               <p className="text-stone-600">
-              {translations.homeSection.cards[0].desc}
+              {translations.homeSection.cards[1].desc}
               </p>
             </div>
             <div className="text-center">
@@ -72,7 +72,7 @@ export function Home() {
               </div>
               <h3 className="text-xl mb-3 text-stone-800">{translations.homeSection.cards[2].title}</h3>
               <p className="text-stone-600">
-              {translations.homeSection.cards[0].desc}
+              {translations.homeSection.cards[2].desc}
               </p>
             </div>
           </div>
@@ -85,14 +85,14 @@ export function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1607506549681-b0c179560f00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMGxlYXJuaW5nJTIwbmF0dXJlJTIwb3V0ZG9vcnxlbnwxfHx8fDE3NzExOTI5NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/child.avif"
                 alt="Children learning in nature"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1609811645795-f72ea07f47e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBlZHVjYXRpb25hbCUyMHRveXMlMjBtb250ZXNzb3JpfGVufDF8fHx8MTc3MTE5Mjk3Mnww&ixlib=rb-4.1.0&q=80&w=1080"
+                src="flower.avif"
                 alt="Montessori materials"
                 className="w-full h-full object-cover"
               />
