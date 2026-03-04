@@ -85,15 +85,15 @@ export function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg">
               <img
-                src="/child.avif"
-                alt="Children learning in nature"
+                src="/trees.JPG"
+                alt="Learning about leaf shapes"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg">
               <img
-                src="flower.avif"
-                alt="Montessori materials"
+                src="/aiueo.JPG"
+                alt="Montessori Japanese learning materials"
                 className="w-full h-full object-cover"
               />
             </div>

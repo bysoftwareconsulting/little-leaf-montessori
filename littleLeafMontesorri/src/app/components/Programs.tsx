@@ -40,7 +40,7 @@ export function Programs() {
                     className={`relative h-80 rounded-2xl overflow-hidden shadow-xl ${isEven ? "" : "lg:col-start-1 lg:row-start-1"
                       }`}
                   ><img
-                      src={isEven ? "/materials.avif" : "/numbers.avif"}
+                      src={isEven ? "/tools.JPG" : "/animals.JPG"}
                       alt={program.title}
                       className="w-full h-full object-cover"
                     />
