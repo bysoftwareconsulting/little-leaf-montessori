@@ -5,24 +5,36 @@ export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
-    childAge: "",
-    program: "",
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // In a real application, this would send the form data to a server
-    alert("Thank you for your interest! We will contact you soon.");
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      childAge: "",
-      program: "",
-      message: "",
-    });
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData), // send everything
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        console.error("Contact form error:", data);
+        alert("Something went wrong. Please try again.");
+        return;
+      }
+
+      alert("Thank you for your interest! We will contact you soon.");
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (err) {
+      console.error(err);
+      alert("Network error. Please try again.");
+    }
   };
 
   const handleChange = (
@@ -30,10 +42,8 @@ export function Contact() {
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
     >
   ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   return (
@@ -150,63 +160,6 @@ export function Contact() {
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                   />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="block mb-2 text-stone-700"
-                  >
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="childAge"
-                    className="block mb-2 text-stone-700"
-                  >
-                    Child's Age
-                  </label>
-                  <input
-                    type="text"
-                    id="childAge"
-                    name="childAge"
-                    value={formData.childAge}
-                    onChange={handleChange}
-                    placeholder="e.g., 3 years old"
-                    className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="program"
-                    className="block mb-2 text-stone-700"
-                  >
-                    Program of Interest
-                  </label>
-                  <select
-                    id="program"
-                    name="program"
-                    value={formData.program}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                  >
-                    <option value="">Select a program</option>
-                    <option value="infant">Infant Community (3-18 months)</option>
-                    <option value="toddler">Toddler Program (18 months - 3 years)</option>
-                    <option value="primary">Primary Program (3-6 years)</option>
-                    <option value="elementary">Elementary Program (6-12 years)</option>
-                  </select>
                 </div>
 
                 <div>
