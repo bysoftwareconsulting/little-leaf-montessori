@@ -151,8 +151,6 @@ export function Root() {
                 {translations.footer.address2}
                 <br />
                 <br />
-                {translations.footer.phone}
-                <br />
                 {translations.footer.email}
               </p>
             </div>

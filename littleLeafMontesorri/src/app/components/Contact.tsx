@@ -72,20 +72,10 @@ export function Contact() {
                   <div>
                     <h3 className="mb-1 text-stone-800">Address</h3>
                     <p className="text-stone-600">
-                      123 Nature Lane
-                      <br />
-                      Garden City, GC 12345
+                    5415 SE Powell Blvd.
+                  <br />
+                  Portland, OR 97406    
                     </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-amber-700" />
-                  </div>
-                  <div>
-                    <h3 className="mb-1 text-stone-800">Phone</h3>
-                    <p className="text-stone-600">(555) 123-4567</p>
                   </div>
                 </div>
 
@@ -95,29 +85,16 @@ export function Contact() {
                   </div>
                   <div>
                     <h3 className="mb-1 text-stone-800">Email</h3>
-                    <p className="text-stone-600">info@montessorigarden.com</p>
+                    <p className="text-stone-600">littleleafpdx@gmail.com</p>
                   </div>
                 </div>
 
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-rose-700" />
-                  </div>
-                  <div>
-                    <h3 className="mb-1 text-stone-800">Hours</h3>
-                    <p className="text-stone-600">
-                      Monday - Friday: 8:00 AM - 5:00 PM
-                      <br />
-                      Saturday - Sunday: Closed
-                    </p>
-                  </div>
-                </div>
               </div>
 
               {/* Map Placeholder */}
               <div className="mt-8 h-64 bg-stone-200 rounded-2xl overflow-hidden">
                 <div className="w-full h-full flex items-center justify-center text-stone-500">
-                  Map Location
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.606234706518!2d-122.60681129999999!3d45.4978736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a17ec8d6161b%3A0xb307af88149a7283!2sLittle%20Leaf%20Montessori!5e0!3m2!1sen!2sus!4v1772665464922!5m2!1sen!2sus" width="600" height="450" loading="lazy"></iframe>
                 </div>
               </div>
             </div>
@@ -187,61 +164,6 @@ export function Contact() {
                   Send Message
                 </button>
               </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 bg-stone-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl mb-12 text-center text-stone-800">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-2xl">
-              <h3 className="text-xl mb-3 text-stone-800">
-                How do I schedule a tour?
-              </h3>
-              <p className="text-stone-600">
-                You can schedule a tour by filling out the contact form above,
-                calling us at (555) 123-4567, or emailing
-                info@montessorigarden.com. We offer tours Monday through Friday at
-                9:00 AM and 2:00 PM.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-2xl">
-              <h3 className="text-xl mb-3 text-stone-800">
-                What is your enrollment process?
-              </h3>
-              <p className="text-stone-600">
-                Our enrollment process begins with a tour of our facility. After
-                the tour, interested families complete an application and meet with
-                our director to discuss program fit and availability.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-2xl">
-              <h3 className="text-xl mb-3 text-stone-800">
-                Do you offer part-time programs?
-              </h3>
-              <p className="text-stone-600">
-                Yes! We offer both full-time and part-time enrollment options for
-                most of our programs. Please contact us to discuss the options that
-                would work best for your family.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-2xl">
-              <h3 className="text-xl mb-3 text-stone-800">
-                What should my child bring to school?
-              </h3>
-              <p className="text-stone-600">
-                We provide a detailed supply list upon enrollment. Generally,
-                children need indoor shoes, weather-appropriate outdoor clothing,
-                and a lunch box. We provide all learning materials and supplies.
-              </p>
             </div>
           </div>
         </div>

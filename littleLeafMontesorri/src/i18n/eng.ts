@@ -10,7 +10,6 @@ export const en = {
       motto:"Nurturing young minds through nature inspired learning",
       quickLinks:"Quick Links",
       contact:"Contact",
-      phone:"Phone: (555) 123-5467",
       address1:"5415 SE Powell Blvd.",
       address2:"Portland, OR 97406",
       email:"Email: littleleafpdx@gmail.com"
@@ -23,11 +22,11 @@ export const en = {
     },
     homeSection:{
       title: "Our Mission",
-      subtitle: "Provide Japanese and English languages environment with cultural experiences.",
+      subtitle: "Provide Japanese and English language environments with cultural experiences.",
       cards:[
-        {title:"Nurture Independence",desc:"Gain and practice life skills and knowledge to be able to take care of yourself. Choose own work within limits in the classroom."},
-        {title:"Foster the joy of learning and curiosity.",desc:"Guide children to choices of materials for their appropriate development needs. Accomplishment through repetition and use of self-correcting materials."},
-        {title:"Develop self-respect and respect for our surroundings.",desc:"Nurture and develop into a peaceful citizen."}]
+        {title:"Nurture Independence",desc:"Gain and practice life skills and knowledge to achieve do it yourself ability by offering a child-sized environment. Choose own work within limits in a classroom."},
+        {title:"Foster the joy of learning and curiosity.",desc:"Create childrens’ satisfaction by guiding them to choices of materials from their appropriate development needs. Children feel a sense of accomplishment through repetition and use of self-correcting materials."},
+        {title:"Develop self-respect and respect for our surroundings.",desc:"Nurture and develop into a peaceful citizen. Help each other in a self-paced learning and multi-age classroom. Take care of breakable materials. Appreciation of their surroundings and work materials."}]
     },
     homeFooter:{
         title:"Ready to Join Our Community?",
@@ -36,12 +35,14 @@ export const en = {
     },
     aboutTitle:{
       title:"About Us",
-      desc:"We are a Japanese immersion Montessori Preschool Program for children age 3 to 6 years old in SE Portland. We offer Montessori program in Japanese. Half day/Full day and 2 days to 5 days/week options.​ We nurture children to be independent and creative."
+      desc:"We are a Japanese immersion Montessori Preschool Program for children age 3 to 6 years old in SE Portland."
     },
     aboutHero:{
       title:"Our Mission",
-      desc1:"We are dedicated to creating a learning environment where children can explore, discover, and grow at their own pace. Our approach integrates traditional Montessori principles with nature-based learning, fostering independence, and creativity",
-      desc2:"Every child is unique, and we honor that uniqueness by providing individualized attention and carefully prepared environments that inspire curiosity and joy in learning.",
+      desc1:"The Little Leaf Montessori classroom consists of 5 Areas: Practical Life, Sensorial, Language, Math, and Cultural Studies (geography, science, botany, zoology, art, music, and movement)",
+      desc2:"We focus to nurture the whole child, to be peaceful and to be independent. We have a prepared, child-centered environment. Children learn at their own pace, learn to choose their own work, to discover and to concentrate. The mixed age classroom promotes respect for each other's developmental needs. We celebrate Japanese cultural events.",
+      subtitle:"Prominent Figures that were enrolled in montessoris",
+      list:["Google's Larry Page、Sergey Brin","Amazon's Jeff Bezos","Facebook's Mark Zuckerberg","Wikipedia's Jimmy Wale's","Microsoft's Bill gates","Barack Obama","Peter Drucker the father of managment","Washington Post's Katherine Graham","Yo-Yo Ma"] 
     },
     programHeader:{
       title:"Our Programs",
@@ -50,7 +51,6 @@ export const en = {
     programHero:{
       programs:[
         {title:"2025-26 Program",desc:"We offer 2, 3, 4 and 5 days Japanese preschool programs with half day (8:30 - 12:15) and full day (8:30 - 14:30) options and we serve children from 3 to 6 years old (please inquire about availability for 2 1/2 to 3 year olds).   Depending on availability, you can choose which days your child attends.　Before and after school care is also available."},
-        {title:"Summer School 2026",desc:"We offer a Japanese summer school from 6/17 to 8/2. Please contact us for more information."},
       ]
     },
     programSchedule:{
