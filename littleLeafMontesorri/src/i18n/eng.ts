@@ -18,7 +18,12 @@ export const en = {
       title: "Little Leaf Montessori",
       subtitle: "We are a Japanese immersion Montessori Preschool Program for children age 3 to 6 years old in SE Portland.",
       exploreButton:"Explore Programs",
-      scheduleButton:"Schedule a Vists"
+      scheduleButton:"Schedule a Vist"
+    },
+    preschoolforall:{
+      title:"Preschool For All!",
+      subtitle:"We are excited to announce that we are apart of preschool for all in Portland!",
+      link:"https://multco.us/programs/preschool-all"
     },
     homeSection:{
       title: "Our Mission",

@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { Sprout, Heart, Sun } from "lucide-react";
 import { useLanguage } from "../../context/LanguageContext";
+import { Image } from "lucide-react";
 
 export function Home() {
   const { translations } = useLanguage();
@@ -19,7 +20,7 @@ export function Home() {
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-6xl mb-6">{translations.homeHero.title}</h1>
           <p className="text-xl md:text-2xl mb-8 text-stone-100">
-          {translations.homeHero.subtitle}
+            {translations.homeHero.subtitle}
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link
@@ -38,13 +39,63 @@ export function Home() {
         </div>
       </section>
 
+      {/* Multnomah County / Preschool for All Banner */}
+<section className="pt-12 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="rounded-2xl border border-stone-200 bg-stone-50 shadow-sm overflow-hidden">
+      <div className="p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center gap-6">
+        {/* Logo badge */}
+        <div className="flex items-center gap-4">
+          <div className="h-14 w-14 sm:h-16 sm:w-16 rounded-xl bg-white border border-stone-200 flex items-center justify-center overflow-hidden">
+            <img
+              src="/multnomah.svg"
+              alt="Multnomah County logo"
+              className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
+            />
+          </div>
+
+          <div className="sm:hidden">
+            
+            <h3 className="text-xl text-stone-900">
+              {translations.preschoolforall.title}
+            </h3>
+          </div>
+        </div>
+
+        {/* Text */}
+        <div className="flex-1">
+         
+          <h3 className="hidden sm:block text-2xl sm:text-3xl text-stone-900">
+            {translations.preschoolforall.title}
+          </h3>
+          <p className="mt-2 text-stone-600 text-base sm:text-lg">
+            {translations.preschoolforall.subtitle}
+          </p>
+        </div>
+
+        {/* CTA */}
+        <div className="flex flex-col gap-3 sm:items-end">
+          <a
+            href={translations.preschoolforall.link} // change to the exact program page you want
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-white hover:bg-emerald-700 transition-colors"
+          >
+            Learn more
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* Values Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl mb-4 text-stone-800">{translations.homeSection.title}</h2>
             <p className="text-stone-600 max-w-2xl mx-auto">
-            {translations.homeSection.subtitle}
+              {translations.homeSection.subtitle}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -54,7 +105,7 @@ export function Home() {
               </div>
               <h3 className="text-xl mb-3 text-stone-800">{translations.homeSection.cards[0].title}</h3>
               <p className="text-stone-600">
-              {translations.homeSection.cards[0].desc}
+                {translations.homeSection.cards[0].desc}
               </p>
             </div>
             <div className="text-center">
@@ -63,7 +114,7 @@ export function Home() {
               </div>
               <h3 className="text-xl mb-3 text-stone-800">{translations.homeSection.cards[1].title}</h3>
               <p className="text-stone-600">
-              {translations.homeSection.cards[1].desc}
+                {translations.homeSection.cards[1].desc}
               </p>
             </div>
             <div className="text-center">
@@ -72,7 +123,7 @@ export function Home() {
               </div>
               <h3 className="text-xl mb-3 text-stone-800">{translations.homeSection.cards[2].title}</h3>
               <p className="text-stone-600">
-              {translations.homeSection.cards[2].desc}
+                {translations.homeSection.cards[2].desc}
               </p>
             </div>
           </div>
@@ -106,12 +157,12 @@ export function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl mb-6">{translations.homeFooter.title}</h2>
           <p className="text-xl mb-8 text-emerald-100">
-          {translations.homeFooter.subtitle}          </p>
+            {translations.homeFooter.subtitle}          </p>
           <Link
             to="/contact"
             className="inline-block bg-white text-emerald-700 px-8 py-3 rounded-full hover:bg-stone-100 transition-colors"
           >
-{translations.homeFooter.ctaButton}          </Link>
+            {translations.homeFooter.ctaButton}          </Link>
         </div>
       </section>
     </div>
