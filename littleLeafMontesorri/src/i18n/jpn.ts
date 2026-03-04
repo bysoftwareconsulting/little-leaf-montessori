@@ -13,6 +13,10 @@ export const jpn = {
       exploreButton:"プログラムを検索する",
       scheduleButton:"見学の受付"
     },
+    preschoolforall:{
+      title:"Preschool For All!",
+      subtitle:"We are excited to announce that we are apart of preschool for all in Portland!"
+    },
     homeSection:{
       title: "教育・保育目標",
       subtitle: "主に日本語と文化が体験できる場を提供する",
