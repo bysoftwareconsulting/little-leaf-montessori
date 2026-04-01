@@ -15,7 +15,8 @@ export const jpn = {
     },
     preschoolforall:{
       title:"Preschool For All!",
-      subtitle:"We are excited to announce that we are apart of preschool for all in Portland!"
+      subtitle:"We are excited to announce that we are apart of preschool for all in Portland!",
+      link:"https://multco.us/programs/preschool-all"
     },
     homeSection:{
       title: "教育・保育目標",
