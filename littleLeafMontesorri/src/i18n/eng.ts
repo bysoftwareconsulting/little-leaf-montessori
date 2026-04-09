@@ -10,9 +10,9 @@ export const en = {
       motto:"Nurturing young minds through nature inspired learning",
       quickLinks:"Quick Links",
       contact:"Contact",
-      address1:"5415 SE Powell Blvd.",
-      address2:"Portland, OR 97406",
-      email:"Email: littleleafpdx@gmail.com"
+      address1:"	5145 SE Lincoln Street",
+        address2:"Portland, OR 97215",
+        email:"Email: littleleafpdx@gmail.com"
   },
     homeHero: {
       title: "Little Leaf Montessori",
@@ -55,7 +55,7 @@ export const en = {
     },
     programHero:{
       programs:[
-        {title:"2025-26 Program",desc:"We offer 2, 3, 4 and 5 days Japanese preschool programs with half day (8:30 - 12:15) and full day (8:30 - 14:30) options and we serve children from 3 to 6 years old (please inquire about availability for 2 1/2 to 3 year olds).   Depending on availability, you can choose which days your child attends.　Before and after school care is also available."},
+        {title:"2025-26 Program",desc:"We offer 2, 3, 4 and 5 days Japanese preschool programs with half day (8:30 - 12:15) and full day (8:30 - 14:45) options and we serve children from 3 to 6 years old.   Depending on availability, you can choose which days your child attends.　Before and after school care is also available."},
       ]
     },
     programSchedule:{

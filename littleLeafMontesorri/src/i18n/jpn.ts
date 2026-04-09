@@ -36,8 +36,8 @@ export const jpn = {
         motto:"Nurturing young minds through nature inspired learning",
         quickLinks:"クイックリンク",
         contact:"コンタクト",
-        address1:"5415 SE Powell Blvd.",
-        address2:"Portland, OR 97406",
+        address1:"	5145 SE Lincoln Street",
+        address2:"Portland, OR 97215",
         email:"Email: littleleafpdx@gmail.com"
     },
     aboutTitle:{
@@ -58,7 +58,7 @@ export const jpn = {
     },
     programHero:{
       programs:[
-        {title:"2025-26 プログラム",desc:"３歳から６歳（２歳半からのお子さんにつきましては応相談）の半日または全日,　そして週２日から週５日の日本語のプリスクールです。曜日につきましては、空き状況によりお好きな日にちをお選びいただけます。ビフォー、アフタースクールも提供しています。"},
+        {title:"2025-26 プログラム",desc:"３歳から６歳の半日または全日,　そして週２日から週５日の日本語のプリスクールです。曜日につきましては、空き状況によりお好きな日にちをお選びいただけます。ビフォー、アフタースクールも提供しています。"},
       ]
     },
     programSchedule:{

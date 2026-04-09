@@ -94,8 +94,7 @@ export function Contact() {
               {/* Map Placeholder */}
               <div className="mt-8 h-64 bg-stone-200 rounded-2xl overflow-hidden">
                 <div className="w-full h-full flex items-center justify-center text-stone-500">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.606234706518!2d-122.60681129999999!3d45.4978736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a17ec8d6161b%3A0xb307af88149a7283!2sLittle%20Leaf%20Montessori!5e0!3m2!1sen!2sus!4v1772665464922!5m2!1sen!2sus" width="600" height="450" loading="lazy"></iframe>
-                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5592.185271458122!2d-122.609096!3d45.50821380000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a0f59bcae08b%3A0x9b0952403b1efa5d!2s5145%20SE%20Lincoln%20St%2C%20Portland%2C%20OR%2097215!5e0!3m2!1sen!2sus!4v1775757790721!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
               </div>
             </div>
 
