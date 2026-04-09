@@ -10,7 +10,7 @@ export const en = {
       motto:"Nurturing young minds through nature inspired learning",
       quickLinks:"Quick Links",
       contact:"Contact",
-      address1:"	5145 SE Lincoln Street",
+      address1:"5145 SE Lincoln Street",
         address2:"Portland, OR 97215",
         email:"Email: littleleafpdx@gmail.com"
   },

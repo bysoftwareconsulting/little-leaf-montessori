@@ -72,9 +72,9 @@ export function Contact() {
                   <div>
                     <h3 className="mb-1 text-stone-800">Address</h3>
                     <p className="text-stone-600">
-                    5415 SE Powell Blvd.
+                    5145 SE Lincoln Street
                   <br />
-                  Portland, OR 97406    
+                  Portland, OR 97215    
                     </p>
                   </div>
                 </div>
