@@ -33,7 +33,7 @@ export const jpn = {
     },
     footer:{
         name:"Little Leaf Montesorri",
-        motto:"Nurturing young minds through nature inspired learning",
+        motto:"Nurturing young minds through hands on nature inspired learning",
         quickLinks:"クイックリンク",
         contact:"コンタクト",
         address1:"5145 SE Lincoln Street",
@@ -58,13 +58,13 @@ export const jpn = {
     },
     programHero:{
       programs:[
-        {title:"2025-26 プログラム",desc:"３歳から６歳の半日または全日,　そして週２日から週５日の日本語のプリスクールです。曜日につきましては、空き状況によりお好きな日にちをお選びいただけます。ビフォー、アフタースクールも提供しています。"},
+        {title:"プログラム",desc:"３歳から６歳の半日または全日,　そして週２日から週５日の日本語のプリスクールです。曜日につきましては、空き状況によりお好きな日にちをお選びいただけます。ビフォー、アフタースクールも提供しています。"},
       ]
     },
     programSchedule:{
       title:"１日の様子",
       schedule:[
-        {activity:"ビフォーケア",time:"7:30 - 8:30"},
+        {activity:"ビフォーケア",time:"7:00 - 8:30"},
         {activity:"登園",time:"8:30"},
         {activity:"お外遊び",time:"8:30 - 9:30"},
         {activity:"朝のお仕事、おやつ(できる限り有機のものをご用意いたします )、日本語のサークルタイム",time:"9:30 - 11:30"},

@@ -22,6 +22,9 @@ export function Home() {
           <p className="text-xl md:text-2xl mb-8 text-stone-100">
             {translations.homeHero.subtitle}
           </p>
+          <p className="text-xl md:text-2xl mb-8 text-stone-100">
+            {translations.homeHero.subsubtitle}
+          </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link
               to="/programs"

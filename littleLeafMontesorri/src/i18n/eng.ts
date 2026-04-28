@@ -7,7 +7,7 @@ export const en = {
     },
     footer:{
       name:"Little Leaf Montesorri",
-      motto:"Nurturing young minds through nature inspired learning",
+      motto:"Nurturing young minds through hands on nature inspired learning",
       quickLinks:"Quick Links",
       contact:"Contact",
       address1:"5145 SE Lincoln Street",
@@ -16,7 +16,8 @@ export const en = {
   },
     homeHero: {
       title: "Little Leaf Montessori",
-      subtitle: "We are a Japanese immersion Montessori Preschool Program for children age 3 to 6 years old in SE Portland.",
+      subtitle: "We are a Japanese immersion Montessori Preschool Program",
+      subsubtitle:"for children age 3 to 6 years old in SE Portland",
       exploreButton:"Explore Programs",
       scheduleButton:"Schedule a Vist"
     },
@@ -40,13 +41,13 @@ export const en = {
     },
     aboutTitle:{
       title:"About Us",
-      desc:"We are a Japanese immersion Montessori Preschool Program for children age 3 to 6 years old in SE Portland."
+      desc:"We are a small, one-classroom program where children develop close friendships, build a strong sense of community, and learn to support and care for one another in a warm, nurturing environment. "
     },
     aboutHero:{
       title:"Our Mission",
       desc1:"The Little Leaf Montessori classroom consists of 5 Areas: Practical Life, Sensorial, Language, Math, and Cultural Studies (geography, science, botany, zoology, art, music, and movement)",
       desc2:"We focus to nurture the whole child, to be peaceful and to be independent. We have a prepared, child-centered environment. Children learn at their own pace, learn to choose their own work, to discover and to concentrate. The mixed age classroom promotes respect for each other's developmental needs. We celebrate Japanese cultural events.",
-      subtitle:"Prominent Figures that were enrolled in montessoris",
+      subtitle:"Montessori alumni",
       list:["Google's Larry Page、Sergey Brin","Amazon's Jeff Bezos","Facebook's Mark Zuckerberg","Wikipedia's Jimmy Wale's","Microsoft's Bill gates","Barack Obama","Peter Drucker the father of managment","Washington Post's Katherine Graham","Yo-Yo Ma"] 
     },
     programHeader:{
@@ -55,21 +56,21 @@ export const en = {
     },
     programHero:{
       programs:[
-        {title:"2025-26 Program",desc:"We offer 2, 3, 4 and 5 days Japanese preschool programs with half day (8:30 - 12:15) and full day (8:30 - 14:45) options and we serve children from 3 to 6 years old.   Depending on availability, you can choose which days your child attends.　Before and after school care is also available."},
+        {title:"Montesorri School",desc:"We offer 2, 3, 4 and 5 days Japanese preschool programs with half day (8:30 - 12:15) and full day (8:30 - 14:45) options and we serve children from 3 to 6 years old.   Depending on availability, you can choose which days your child attends.　Before and after school care are available."},
       ]
     },
     programSchedule:{
       title:"Daily Schedule",
       schedule:[
-        {activity:"Before school care",time:"7:30 - 8:30"},
+        {activity:"Before school care",time:"7:00 - 8:30"},
         {activity:"Drop off",time:"8:30"},
         {activity:"Outdoor time",time:"8:30 - 9:30"},
-        {activity:"Morning work time, Snack(provided, organic products as possible), Circle time",time:"9:30 - 11:30"},
+        {activity:"Morning work time, Snack(providing mostly organic snacks), Circle time",time:"9:30 - 11:30"},
         {activity:"Lunch",time:"11:40 - 12:05"},
         {activity:"Transition & Book Reading",time:"12:05 -12:15"},
         {activity:"Half day Pick up",time:"12:15"},
         {activity:"Afternoon work, Rest",time:"12:15 - 14:30"},
-        {activity:"Transition & Book Reading",time:"14:30 - 14:45"},
+        {activity:"Clean up and Book reading",time:"14:30 - 14:45"},
         {activity:"Full day Pick up",time:"14:45"},
         {activity:"After school care",time:"14:45 - 17:00"}
       ]
